@@ -30,8 +30,11 @@ body::before {
 
 /* Enhanced Responsive Typography Scaling */
 .hero-heading {
+    font-family: 'Great Vibes', 'Playfair Display SC', cursive;
     font-size: clamp(2.25rem, 5vw, 3.5rem);
-    line-height: 1.1;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    font-weight: 400;
     text-shadow: 0 2px 4px rgba(0,0,0,0.06);
 }
 
@@ -57,7 +60,7 @@ body::before {
 
 /* Signature handwritten font */
 .signature {
-    font-family: 'Caveat', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: 1.25rem;
     color: #d97706;
 }
@@ -434,7 +437,8 @@ body::before {
     /* Smaller screens - reduce font sizes */
     .hero-heading {
         font-size: clamp(1.75rem, 8vw, 2.5rem);
-        line-height: 1.2;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
     }
     
     .section-heading {
@@ -464,6 +468,7 @@ body::before {
     .hero-heading {
         font-size: 1.5rem;
         line-height: 1.3;
+        letter-spacing: 0.01em;
     }
     
     .section-heading {
