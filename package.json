@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "npx tailwindcss -i ./input.css -o ./dist/output.css --watch & npx live-server",
+    "build": "npx tailwindcss -i ./input.css -o ./dist/output.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}
