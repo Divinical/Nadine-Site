@@ -1,5 +1,5 @@
 /**
- * Scrumptiously Sourdough - Main JavaScript
+ * Scrumptiously Sourdough - Enhanced JavaScript
  * Handles all UI interactions and animations
  */
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function initScrollReveal() {
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin: '0px 0px -100px 0px'
         };
 
         const observer = new IntersectionObserver(function(entries) {

@@ -14,22 +14,22 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400;600&family=Great+Vibes&family=Playfair+Display+SC:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&family=Kalam:wght@300;400;700&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="custom.css">
 </head>
-<body class="font-body text-primary">
+<body class="font-body">
     <!-- Header -->
-    <header class="paper-texture sticky top-0 z-50 artisan-shadow border-b-2 border-amber-200 relative">
-        <div class="container mx-auto container-mobile px-4 py-4 sm:py-6 header-mobile">
+    <header class="navbar sticky top-0 z-50 relative">
+        <div class="container mx-auto px-4 py-4 sm:py-6">
             <div class="flex flex-col sm:flex-row justify-between items-center">
-                <div class="mb-4 sm:mb-0 flex items-center gap-3 w-full sm:w-auto justify-between">
-                    <div class="flex items-center gap-3">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-amber-100 border-3 border-amber-300 rounded-lg flex items-center justify-center sketch-border flex-shrink-0">
-                            <span class="text-amber-700 text-xs sm:text-sm font-bold">LOGO</span>
+                <div class="mb-4 sm:mb-0 flex items-center gap-4 w-full sm:w-auto justify-between">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-golden-honey to-primary-coral rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0">
+                            <span class="text-white text-sm font-bold">SS</span>
                         </div>
-                        <h1 class="text-xl sm:text-2xl font-display font-bold text-amber-900">
+                        <h1 class="text-2xl sm:text-3xl font-display text-ink-navy">
                             Scrumptiously Sourdough
                         </h1>
                     </div>
@@ -43,13 +43,13 @@
                 </div>
                 
                 <!-- Desktop Navigation -->
-                <nav class="flex nav-mobile space-x-4 sm:space-x-8">
-                    <a href="#menu" class="nav-link text-amber-800 hover:text-amber-900 font-medium text-sm sm:text-lg">Menu</a>
-                    <a href="#about" class="nav-link text-amber-800 hover:text-amber-900 font-medium text-sm sm:text-lg">About</a>
-                    <a href="#order" class="nav-link text-amber-800 hover:text-amber-900 font-medium text-sm sm:text-lg">Order</a>
-                    <button id="kitchenStoryBtn" class="nav-link text-amber-800 hover:text-amber-900 font-medium text-sm sm:text-lg premium-hover">
-                        <span class="hidden sm:inline">The Wild Yeast Kitchen</span>
-                        <span class="sm:hidden">Kitchen</span>
+                <nav class="nav-desktop flex space-x-8">
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#order" class="nav-link">Order</a>
+                    <button id="kitchenStoryBtn" class="nav-link">
+                        <span class="hidden lg:inline">The Wild Yeast Kitchen</span>
+                        <span class="lg:hidden">Kitchen</span>
                     </button>
                 </nav>
             </div>
@@ -57,47 +57,42 @@
         
         <!-- Mobile Navigation Menu -->
         <nav class="mobile-nav-menu" id="mobileNavMenu">
-            <a href="#menu" class="nav-link text-amber-800 hover:text-amber-900 font-medium">Menu</a>
-            <a href="#about" class="nav-link text-amber-800 hover:text-amber-900 font-medium">About</a>
-            <a href="#order" class="nav-link text-amber-800 hover:text-amber-900 font-medium">Order</a>
-            <button id="kitchenStoryBtnMobile" class="nav-link text-amber-800 hover:text-amber-900 font-medium">The Wild Yeast Kitchen</button>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#order" class="nav-link">Order</a>
+            <button id="kitchenStoryBtnMobile" class="nav-link">The Wild Yeast Kitchen</button>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="py-12 sm:py-20 lg:py-32 relative overflow-hidden">
-        <div class="container mx-auto container-mobile px-4 text-center">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="hero-heading font-display font-bold text-primary mb-4 sm:mb-6 leading-tight reveal">
+    <section class="hero-gradient py-16 sm:py-24 lg:py-32 relative overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="hero-heading mb-8 sm:mb-12 reveal">
                     Handcrafted with Heart,<br>Baked with Soul
                 </h2>
                 
-                <!-- Hero image with organic positioning -->
-                <div class="relative reveal hero-hover mb-6 sm:mb-8" style="transition-delay: 0.2s;">
-                    <div class="absolute inset-0 bg-gradient-to-br from-amber-50/30 to-amber-100/20 rounded-2xl z-0"></div>
-                    
-                    <div class="w-full max-w-2xl mx-auto h-64 sm:h-80 lg:h-96 bg-amber-50 border-4 border-amber-200 rounded-2xl flex items-center justify-center sketch-border artisan-shadow hover-lift relative z-10 shadow-[0_4px_14px_rgba(0,0,0,0.08)]">
+                <!-- Hero image -->
+                <div class="relative reveal float mb-8 sm:mb-12" style="transition-delay: 0.2s;">
+                    <div class="hero-image-container w-full max-w-3xl mx-auto h-72 sm:h-96 lg:h-[28rem] flex items-center justify-center">
                         <div class="text-center">
-                            <div class="text-5xl sm:text-7xl lg:text-8xl mb-4">🍞</div>
-                            <span class="text-amber-700 font-semibold text-lg sm:text-xl">Hero Image Placeholder</span>
-                            <p class="text-amber-600 mt-2 text-sm sm:text-base">Artisan sourdough loaf</p>
+                            <div class="text-6xl sm:text-8xl lg:text-9xl mb-6">🍞</div>
+                            <span class="text-primary-rust font-semibold text-xl sm:text-2xl font-display">Artisan Sourdough Loaf</span>
+                            <p class="text-warm-grey mt-2 text-lg">Fresh from our island kitchen</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="text-center space-y-4 reveal" style="transition-delay: 0.4s;">
-                    <a href="#menu" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-lg text-lg sm:text-xl cta-enhanced cta-btn">
-                        <span class="block sm:inline">Taste the Difference<br class="sm:hidden"> Today</span>
-                    </a>
-                    <p class="text-secondary text-base sm:text-[1.075rem] leading-[1.75rem] font-display italic">
+                <div class="text-center space-y-6 reveal" style="transition-delay: 0.4s;">
+                    <p class="text-warm-grey text-xl font-serif italic">
                         Real bread. Real ingredients. Real good.
                     </p>
                     
                     <!-- Wild Yeast Kitchen Quote Link -->
-                    <div class="mt-4 sm:mt-8">
-                        <button id="kitchenQuoteBtn" class="group text-amber-700 hover:text-amber-900 text-sm sm:text-base font-display italic transition-colors premium-hover bg-amber-50/50 px-4 py-2 rounded-lg border border-amber-200/50 hover:border-amber-300">
-                            <span class="block">"Growing wild yeast is like nurturing a living piece of our island..."</span>
-                            <span class="text-xs text-amber-600 group-hover:text-amber-800 mt-1 block">— Discover The Wild Yeast Kitchen</span>
+                    <div class="mt-8 sm:mt-12">
+                        <button id="kitchenQuoteBtn" class="handwritten-quote p-6 transition-all duration-300 hover:scale-105">
+                            <span class="block text-lg leading-relaxed">"Growing wild yeast is like nurturing a living piece of our island..."</span>
+                            <span class="text-sm text-sage-green mt-2 block font-medium">— Discover The Wild Yeast Kitchen</span>
                         </button>
                     </div>
                 </div>
@@ -106,175 +101,159 @@
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="pt-6 sm:pt-8 lg:pt-8 pb-12 sm:pb-20 relative">
-        <!-- Background texture -->
-        <div class="absolute inset-0 opacity-20">
-            <div class="absolute top-10 left-1/4 w-32 h-32 bg-amber-200 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-20 right-1/3 w-24 h-24 bg-amber-100 rounded-full blur-2xl"></div>
-        </div>
-        
+    <section id="menu" class="py-16 sm:py-24 relative">
         <div class="container mx-auto px-4">
-            <h2 class="text-center section-heading font-display tracking-wider uppercase italic text-[#3a2f28] mb-4 reveal">Our Menu</h2>
-            
-            <!-- Hand-drawn underline -->
-            <div class="w-48 mx-auto mb-8 sm:mb-12 reveal" style="transition-delay: 0.1s;">
-                <svg viewBox="0 0 200 12" class="w-full h-3 text-amber-600 opacity-60">
-                    <path d="M10 6 Q50 2 100 6 T190 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
-                </svg>
-            </div>
-            
-            <!-- Breads -->
-            <div class="mb-12 sm:mb-16">
-                <h3 class="subsection-heading font-display font-bold text-amber-800 text-center mb-6 sm:mb-8 reveal section-subtitle uppercase tracking-wide">Breads</h3>
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-center section-heading mb-4 reveal">Our Menu</h2>
                 
-                <div class="relative max-w-6xl mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-br from-amber-50/20 to-amber-100/10 rounded-3xl z-0 pointer-events-none"></div>
+                <!-- Elegant underline -->
+                <div class="w-32 mx-auto mb-12 sm:mb-16 reveal" style="transition-delay: 0.1s;">
+                    <div class="h-1 bg-gradient-to-r from-sage-green via-golden-honey to-primary-coral rounded-full"></div>
+                </div>
+                
+                <!-- Breads -->
+                <div class="mb-16 sm:mb-20">
+                    <h3 class="subsection-heading text-center mb-8 sm:mb-12 reveal">Artisan Breads</h3>
                     
-                    <!-- Row 1 -->
-                    <div class="flex flex-wrap justify-center gap-6 lg:gap-8 mb-6 sm:mb-8 lg:mb-12 relative z-10">
-                        <div class="w-64 lg:w-72 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform rotate-0.5 reveal" style="transition-delay: 0.1s;">
-                            <div class="w-full h-32 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                                <span class="text-4xl">🍞</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                        <div class="menu-item reveal" style="transition-delay: 0.1s;">
+                            <div class="menu-item-image">
+                                <span>🍞</span>
                             </div>
-                            <h4 class="text-xl font-display font-semibold text-center">Plain Artisan Loaf</h4>
+                            <h4 class="text-xl font-display font-medium text-ink-navy text-center">Plain Artisan Loaf</h4>
                         </div>
                         
-                        <div class="w-64 lg:w-72 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform -rotate-0.5 reveal" style="transition-delay: 0.2s;">
-                            <div class="w-full h-32 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                                <span class="text-4xl">🍞</span>
+                        <div class="menu-item reveal" style="transition-delay: 0.2s;">
+                            <div class="menu-item-image">
+                                <span>🍞</span>
                             </div>
-                            <h4 class="text-xl font-display font-semibold text-center">Cranberry & Raisin</h4>
+                            <h4 class="text-xl font-display font-medium text-ink-navy text-center">Cranberry & Raisin</h4>
                         </div>
                         
-                        <div class="w-64 lg:w-72 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform rotate-0.5 reveal" style="transition-delay: 0.3s;">
-                            <div class="w-full h-32 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                                <span class="text-4xl">🍞</span>
+                        <div class="menu-item reveal" style="transition-delay: 0.3s;">
+                            <div class="menu-item-image">
+                                <span>🍞</span>
                             </div>
-                            <h4 class="text-xl font-display font-semibold text-center">Sunflower & Pumpkin Seed</h4>
-                        </div>
-                    </div>
-                    
-                    <!-- Row 2 -->
-                    <div class="flex flex-wrap justify-center gap-6 lg:gap-8 relative z-10">
-                        <div class="w-64 lg:w-72 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform -rotate-0.5 reveal" style="transition-delay: 0.4s;">
-                            <div class="w-full h-32 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                                <span class="text-4xl">🥖</span>
-                            </div>
-                            <h4 class="text-xl font-display font-semibold text-center">Ciabatta</h4>
+                            <h4 class="text-xl font-display font-medium text-ink-navy text-center">Sunflower & Pumpkin Seed</h4>
                         </div>
                         
-                        <div class="w-64 lg:w-72 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform rotate-0.5 reveal" style="transition-delay: 0.5s;">
-                            <div class="w-full h-32 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                                <span class="text-4xl">🥯</span>
+                        <div class="menu-item reveal" style="transition-delay: 0.4s;">
+                            <div class="menu-item-image">
+                                <span>🥖</span>
                             </div>
-                            <h4 class="text-xl font-display font-semibold text-center">Plain Bagels</h4>
+                            <h4 class="text-xl font-display font-medium text-ink-navy text-center">Ciabatta</h4>
                         </div>
                         
-                        <div class="w-64 lg:w-72 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform -rotate-0.5 reveal" style="transition-delay: 0.6s;">
-                            <div class="w-full h-32 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                                <span class="text-4xl">🥯</span>
+                        <div class="menu-item reveal" style="transition-delay: 0.5s;">
+                            <div class="menu-item-image">
+                                <span>🥯</span>
                             </div>
-                            <h4 class="text-xl font-display font-semibold text-center">Sesame Seed Bagels</h4>
+                            <h4 class="text-xl font-display font-medium text-ink-navy text-center">Plain Bagels</h4>
+                        </div>
+                        
+                        <div class="menu-item reveal" style="transition-delay: 0.6s;">
+                            <div class="menu-item-image">
+                                <span>🥯</span>
+                            </div>
+                            <h4 class="text-xl font-display font-medium text-ink-navy text-center">Sesame Seed Bagels</h4>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Sweets & Other -->
-            <div>
-                <h3 class="subsection-heading font-display font-bold text-amber-800 text-center mb-6 sm:mb-8 reveal section-subtitle uppercase tracking-wide">Sweets & Other</h3>
                 
-                <div class="flex flex-wrap justify-center gap-6 lg:gap-8 max-w-5xl mx-auto">
-                    <div class="w-56 lg:w-64 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform rotate-0.5 reveal" style="transition-delay: 0.1s;">
-                        <div class="w-full h-28 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                            <span class="text-3xl">🍫</span>
-                        </div>
-                        <h4 class="text-lg font-display font-semibold text-center">Brownies</h4>
-                    </div>
+                <!-- Sweets & Other -->
+                <div>
+                    <h3 class="subsection-heading text-center mb-8 sm:mb-12 reveal">Sweets & Specialties</h3>
                     
-                    <div class="w-56 lg:w-64 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform -rotate-0.5 reveal" style="transition-delay: 0.2s;">
-                        <div class="w-full h-28 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                            <span class="text-3xl">🍰</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                        <div class="menu-item reveal" style="transition-delay: 0.1s;">
+                            <div class="menu-item-image">
+                                <span>🍫</span>
+                            </div>
+                            <h4 class="text-lg font-display font-medium text-ink-navy text-center">Brownies</h4>
                         </div>
-                        <h4 class="text-lg font-display font-semibold text-center">Carrot Cake</h4>
-                    </div>
-                    
-                    <div class="w-56 lg:w-64 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform rotate-0.5 reveal" style="transition-delay: 0.3s;">
-                        <div class="w-full h-28 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                            <span class="text-3xl">🍌</span>
+                        
+                        <div class="menu-item reveal" style="transition-delay: 0.2s;">
+                            <div class="menu-item-image">
+                                <span>🍰</span>
+                            </div>
+                            <h4 class="text-lg font-display font-medium text-ink-navy text-center">Carrot Cake</h4>
                         </div>
-                        <h4 class="text-lg font-display font-semibold text-center">Banana Bread</h4>
-                    </div>
-                    
-                    <div class="w-56 lg:w-64 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform -rotate-0.5 reveal" style="transition-delay: 0.4s;">
-                        <div class="w-full h-28 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                            <span class="text-3xl">🥣</span>
+                        
+                        <div class="menu-item reveal" style="transition-delay: 0.3s;">
+                            <div class="menu-item-image">
+                                <span>🍌</span>
+                            </div>
+                            <h4 class="text-lg font-display font-medium text-ink-navy text-center">Banana Bread</h4>
                         </div>
-                        <h4 class="text-lg font-display font-semibold text-center">Cinnamon Toast Cereal</h4>
-                    </div>
-                    
-                    <div class="w-56 lg:w-64 paper-texture p-6 rounded-xl artisan-shadow hover-lift premium-hover transform rotate-0.5 reveal" style="transition-delay: 0.5s;">
-                        <div class="w-full h-28 bg-amber-100 rounded-lg mb-4 flex items-center justify-center sketch-border">
-                            <span class="text-3xl">🥣</span>
+                        
+                        <div class="menu-item reveal" style="transition-delay: 0.4s;">
+                            <div class="menu-item-image">
+                                <span>🥣</span>
+                            </div>
+                            <h4 class="text-lg font-display font-medium text-ink-navy text-center">Cinnamon Toast Cereal</h4>
                         </div>
-                        <h4 class="text-lg font-display font-semibold text-center">Granola</h4>
+                        
+                        <div class="menu-item reveal" style="transition-delay: 0.5s;">
+                            <div class="menu-item-image">
+                                <span>🥣</span>
+                            </div>
+                            <h4 class="text-lg font-display font-medium text-ink-navy text-center">Granola</h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Handwritten note -->
-            <div class="mt-12 text-center reveal" style="transition-delay: 0.6s;">
-                <div class="handwritten inline-block p-6 rounded-lg artisan-shadow max-w-md">
-                    <p class="text-secondary text-[1.075rem] leading-[1.75rem]">
-                        <em>Note: Gluten-free options available on request. No bestsellers yet.</em>
-                    </p>
+                
+                <!-- Note -->
+                <div class="mt-12 text-center reveal" style="transition-delay: 0.6s;">
+                    <div class="handwritten-quote inline-block p-6 max-w-md">
+                        <p class="text-lg leading-relaxed">
+                            <em>Gluten-free options available on request. Each loaf tells a story.</em>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 relative">
-        <!-- Torn paper effect -->
-        <div class="absolute top-0 w-full h-16 bg-white transform -skew-y-1"></div>
-        <div class="absolute bottom-0 w-full h-16 bg-white transform skew-y-1"></div>
-        
+    <section id="about" class="py-20 sm:py-32 bg-gradient-to-br from-soft-blush to-warm-cream relative">
         <div class="container mx-auto px-4">
-            <h2 class="text-center section-heading font-display tracking-wider uppercase italic text-[#3a2f28] mb-16 reveal">About Nadine</h2>
-            
-            <div class="max-w-6xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-center section-heading mb-16 sm:mb-20 reveal">Meet Nadine</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
                     <!-- Image -->
-                    <div class="lg:col-span-1 reveal">
-                        <div class="w-full h-96 bg-amber-50 border-4 border-amber-200 rounded-2xl flex items-center justify-center sketch-border artisan-shadow hover-lift premium-hover transform rotate-2">
-                            <div class="text-center">
-                                <div class="text-6xl mb-4">👩‍🍳</div>
-                                <span class="text-amber-700 font-semibold text-lg">Nadine Portrait</span>
-                                <p class="text-amber-600 text-sm mt-2">Master Baker</p>
+                    <div class="order-2 lg:order-1 reveal">
+                        <div class="nadine-portrait-card paper-card p-8 text-center max-w-md mx-auto">
+                            <div class="w-full h-80 sm:h-96 bg-gradient-to-br from-paper-white to-golden-honey/20 rounded-2xl flex items-center justify-center mb-6">
+                                <div class="text-center">
+                                    <div class="text-7xl sm:text-8xl mb-4">👩‍🍳</div>
+                                    <span class="text-primary-rust font-display font-medium text-xl">Master Baker</span>
+                                    <p class="text-warm-grey text-sm mt-2">Isle of Lewis</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Content -->
-                    <div class="lg:col-span-2 reveal" style="transition-delay: 0.2s;">
-                        <div class="max-w-prose mx-auto space-y-[1.2em]">
-                            <div class="space-y-6 text-[1.075rem] leading-[1.75rem]">
-                                <p class="text-secondary transform rotate-0.5">Started baking for fun — now passionate about it</p>
-                                <p class="text-secondary transform -rotate-0.5">Describes herself as a feeder who loves seeing people enjoy her creations</p>
-                                <p class="text-secondary transform rotate-0.5">Always experimenting and learning new techniques</p>
-                                <p class="text-secondary transform -rotate-0.5">Grows her own wild yeast</p>
-                                <p class="text-secondary transform rotate-0.5">Family-oriented, down-to-earth, soulful baker</p>
-                            </div>
+                    <div class="order-1 lg:order-2 reveal" style="transition-delay: 0.2s;">
+                        <div class="space-y-6 text-lg leading-relaxed text-warm-grey">
+                            <p class="paper-card p-6">Started baking for fun — now passionate about creating something truly special</p>
+                            <p class="paper-card p-6">Describes herself as a feeder who finds joy in watching people savor her creations</p>
+                            <p class="paper-card p-6">Always experimenting with new techniques while honoring traditional methods</p>
+                            <p class="paper-card p-6">Grows and nurtures her own wild yeast starter</p>
+                            <p class="paper-card p-6">Family-oriented, down-to-earth baker with a soulful approach to bread</p>
                         </div>
-                        
-                        <!-- Signature quote -->
-                        <div class="handwritten p-8 rounded-xl artisan-shadow transform rotate-1 reveal mt-8" style="transition-delay: 0.4s;">
-                            <p class="text-2xl font-display font-bold text-amber-800 leading-tight">
-                                It's just damn good, delicious bread.
-                            </p>
-                            <div class="text-right mt-4">
-                                <span class="signature font-semibold">— Nadine's Values</span>
-                            </div>
+                    </div>
+                </div>
+                
+                <!-- Signature quote - Centered below -->
+                <div class="text-center mt-16 sm:mt-20 reveal" style="transition-delay: 0.4s;">
+                    <div class="paper-card p-8 sm:p-12 inline-block max-w-3xl">
+                        <blockquote class="text-2xl sm:text-3xl font-display font-medium text-ink-navy leading-tight">
+                            "It's just damn good, delicious bread."
+                        </blockquote>
+                        <div class="text-center mt-6">
+                            <span class="text-sage-green font-serif italic text-lg">— Nadine's Philosophy</span>
                         </div>
                     </div>
                 </div>
@@ -283,66 +262,66 @@
     </section>
 
     <!-- Ordering Section -->
-    <section id="order" class="py-20 relative">
+    <section id="order" class="py-20 sm:py-32 relative">
         <div class="container mx-auto px-4">
-            <h2 class="text-center section-heading font-display tracking-wider uppercase italic text-[#3a2f28] mb-16 reveal">How to Order</h2>
-            
-            <div class="max-w-6xl mx-auto">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-center section-heading mb-16 sm:mb-20 reveal">How to Order</h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
                     <!-- Ordering methods card -->
-                    <div class="paper-texture p-8 rounded-2xl artisan-shadow hover-lift premium-hover transform -rotate-0.5 reveal">
-                        <h3 class="subsection-heading font-display font-bold text-amber-800 mb-6 text-center section-subtitle uppercase tracking-wide">Ordering Methods</h3>
+                    <div class="paper-card p-8 sm:p-10 reveal">
+                        <h3 class="subsection-heading text-center mb-8">Get in Touch</h3>
                         <div class="space-y-6">
-                            <div class="flex items-center space-x-4 group">
-                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                                    <span class="text-xl">📞</span>
+                            <div class="flex items-center space-x-6 group hover:bg-soft-blush/30 p-4 rounded-xl transition-all duration-300">
+                                <div class="w-16 h-16 bg-gradient-to-br from-sage-green to-golden-honey rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                                    <span class="text-2xl">📞</span>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-primary text-[1.075rem]">Phone call</h4>
-                                    <a href="tel:07762776413" class="text-amber-600 hover:text-amber-800 font-mono">07762776413</a>
+                                    <h4 class="font-semibold text-ink-navy text-xl font-display">Phone</h4>
+                                    <a href="tel:07762776413" class="text-primary-rust hover:text-primary-coral font-mono text-lg transition-colors">07762776413</a>
                                 </div>
                             </div>
                             
-                            <div class="flex items-center space-x-4 group">
-                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                                    <span class="text-xl">💬</span>
+                            <div class="flex items-center space-x-6 group hover:bg-soft-blush/30 p-4 rounded-xl transition-all duration-300">
+                                <div class="w-16 h-16 bg-gradient-to-br from-primary-coral to-primary-rust rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                                    <span class="text-2xl">💬</span>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-primary text-[1.075rem]">WhatsApp</h4>
-                                    <a href="https://wa.me/447762776413" class="text-amber-600 hover:text-amber-800">Message us</a>
+                                    <h4 class="font-semibold text-ink-navy text-xl font-display">WhatsApp</h4>
+                                    <a href="https://wa.me/447762776413" class="text-primary-rust hover:text-primary-coral text-lg transition-colors">Message us directly</a>
                                 </div>
                             </div>
                             
-                            <div class="flex items-center space-x-4 group">
-                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                                    <span class="text-xl">📧</span>
+                            <div class="flex items-center space-x-6 group hover:bg-soft-blush/30 p-4 rounded-xl transition-all duration-300">
+                                <div class="w-16 h-16 bg-gradient-to-br from-golden-honey to-sage-green rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                                    <span class="text-2xl">📧</span>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-primary text-[1.075rem]">Email</h4>
-                                    <a href="mailto:nadinexx12@gmail.com" class="text-amber-600 hover:text-amber-800 break-all">nadinexx12@gmail.com</a>
+                                    <h4 class="font-semibold text-ink-navy text-xl font-display">Email</h4>
+                                    <a href="mailto:nadinexx12@gmail.com" class="text-primary-rust hover:text-primary-coral break-all text-lg transition-colors">nadinexx12@gmail.com</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Delivery card -->
-                    <div class="paper-texture p-8 rounded-2xl artisan-shadow hover-lift premium-hover transform rotate-0.5 reveal" style="transition-delay: 0.2s;">
-                        <h3 class="subsection-heading font-display font-bold text-amber-800 mb-6 text-center section-subtitle uppercase tracking-wide">Delivery & Payment</h3>
-                        <div class="space-y-6 text-center">
-                            <div>
-                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                    <span class="text-xl">🚚</span>
+                    <div class="paper-card p-8 sm:p-10 reveal" style="transition-delay: 0.2s;">
+                        <h3 class="subsection-heading text-center mb-8">Delivery & Payment</h3>
+                        <div class="space-y-8 text-center">
+                            <div class="hover:bg-soft-blush/30 p-6 rounded-xl transition-all duration-300">
+                                <div class="w-20 h-20 bg-gradient-to-br from-sage-green to-primary-coral rounded-3xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                    <span class="text-3xl">🚚</span>
                                 </div>
-                                <h4 class="font-semibold text-primary mb-2 text-[1.075rem]">Delivery Range</h4>
-                                <p class="text-secondary">Within 10 miles of Stornoway</p>
+                                <h4 class="font-semibold text-ink-navy mb-3 text-xl font-display">Delivery Range</h4>
+                                <p class="text-warm-grey text-lg">Within 10 miles of Stornoway</p>
                             </div>
                             
-                            <div>
-                                <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                                    <span class="text-xl">💰</span>
+                            <div class="hover:bg-soft-blush/30 p-6 rounded-xl transition-all duration-300">
+                                <div class="w-20 h-20 bg-gradient-to-br from-golden-honey to-primary-rust rounded-3xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                                    <span class="text-3xl">💰</span>
                                 </div>
-                                <h4 class="font-semibold text-primary mb-2 text-[1.075rem]">Payment</h4>
-                                <p class="text-secondary">Cash or PayPal only</p>
+                                <h4 class="font-semibold text-ink-navy mb-3 text-xl font-display">Payment</h4>
+                                <p class="text-warm-grey text-lg">Cash or PayPal accepted</p>
                             </div>
                         </div>
                     </div>
@@ -350,15 +329,15 @@
                 
                 <!-- Location -->
                 <div class="text-center reveal" style="transition-delay: 0.4s;">
-                    <div class="paper-texture p-12 rounded-3xl artisan-shadow hover-lift premium-hover transform -rotate-0.5 inline-block relative">
-                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                            <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white text-xl">
+                    <div class="paper-card p-12 sm:p-16 inline-block relative">
+                        <div class="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                            <div class="w-16 h-16 bg-gradient-to-br from-primary-coral to-sage-green rounded-3xl flex items-center justify-center text-white text-2xl shadow-lg">
                                 📍
                             </div>
                         </div>
-                        <h3 class="subsection-heading font-display font-bold text-amber-800 mb-4 mt-4 section-subtitle uppercase tracking-wide">Our Location</h3>
-                        <p class="text-2xl text-secondary font-medium">Stornoway</p>
-                        <p class="text-muted mt-2 italic">Isle of Lewis, Scotland</p>
+                        <h3 class="subsection-heading mb-6 mt-4">Our Island Home</h3>
+                        <p class="text-3xl text-ink-navy font-display font-medium mb-2">Stornoway</p>
+                        <p class="text-warm-grey text-lg italic">Isle of Lewis, Scotland</p>
                     </div>
                 </div>
             </div>
@@ -366,50 +345,47 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-stone-800 text-stone-200 py-16 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-amber-400 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/3 right-1/4 w-48 h-48 bg-amber-600 rounded-full blur-3xl"></div>
+    <footer class="bg-ink-navy text-stone-200 py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-coral rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/3 right-1/4 w-64 h-64 bg-sage-green rounded-full blur-3xl"></div>
         </div>
         
         <div class="container mx-auto px-4 text-center relative z-10">
-            <h3 class="section-heading font-display font-bold mb-2">Scrumptiously Sourdough</h3>
-            <p class="text-xl italic text-amber-500 font-display tracking-tight mb-8">The Wild Yeast Kitchen</p>
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-12 mb-8">
-                <a href="tel:07762776413" class="hover:text-amber-300 transition-colors flex items-center gap-3 text-lg group">
-                    <span class="group-hover:scale-110 transition-transform duration-300">📞</span> 
+            <h3 class="text-3xl sm:text-4xl font-display font-medium mb-3">Scrumptiously Sourdough</h3>
+            <p class="text-xl italic text-golden-honey font-serif tracking-wide mb-12">The Wild Yeast Kitchen</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-16 mb-12">
+                <a href="tel:07762776413" class="hover:text-golden-honey transition-colors flex items-center gap-4 text-lg group">
+                    <span class="group-hover:scale-110 transition-transform duration-300 text-2xl">📞</span> 
                     <span class="font-mono">07762776413</span>
                 </a>
-                <a href="mailto:nadinexx12@gmail.com" class="hover:text-amber-300 transition-colors flex items-center gap-3 text-lg group">
-                    <span class="group-hover:scale-110 transition-transform duration-300">📧</span> 
+                <a href="mailto:nadinexx12@gmail.com" class="hover:text-golden-honey transition-colors flex items-center gap-4 text-lg group">
+                    <span class="group-hover:scale-110 transition-transform duration-300 text-2xl">📧</span> 
                     <span>nadinexx12@gmail.com</span>
                 </a>
-                <span class="flex items-center gap-3 text-lg">
-                    <span>📍</span> 
+                <span class="flex items-center gap-4 text-lg">
+                    <span class="text-2xl">📍</span> 
                     <span>Stornoway, Isle of Lewis</span>
                 </span>
             </div>
             
-            <!-- Hand-drawn divider -->
-            <div class="w-64 h-1 mx-auto mb-8 relative">
-                <svg viewBox="0 0 256 8" class="w-full h-full text-amber-400 opacity-40">
-                    <path d="M4 4 Q64 1 128 4 T252 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
-                </svg>
-            </div>
+            <!-- Elegant divider -->
+            <div class="w-64 h-px mx-auto mb-8 bg-gradient-to-r from-transparent via-golden-honey/40 to-transparent"></div>
             
-            <p class="text-stone-400 text-lg font-light font-display italic">
+            <p class="text-stone-400 text-xl font-serif italic">
                 Raw • Authentic • Damn Good Bread
             </p>
             
             <!-- ForgeHeart watermark -->
-            <div class="hidden lg:block fixed bottom-3 right-3 group cursor-pointer z-10" id="forgeheartCredit">
-                <div class="bg-black/3 backdrop-blur-sm rounded px-2 py-1 border border-white/5 transition-all duration-300 group-hover:bg-black/8">
-                    <div class="flex items-center gap-1.5 text-stone-600 text-xs opacity-40 group-hover:opacity-70">
-                        <div class="w-3 h-3 bg-gradient-to-br from-amber-400 to-amber-600 rounded flex items-center justify-center">
-                            <span class="text-white text-[8px] font-bold">F</span>
+            <div class="hidden lg:block fixed bottom-4 right-4 group cursor-pointer z-10" id="forgeheartCredit">
+                <div class="bg-black/5 backdrop-blur-xl rounded-xl px-3 py-2 border border-white/10 transition-all duration-300 group-hover:bg-black/10">
+                    <div class="flex items-center gap-2 text-stone-500 text-xs opacity-50 group-hover:opacity-80">
+                        <div class="w-4 h-4 bg-gradient-to-br from-golden-honey to-primary-coral rounded-lg flex items-center justify-center">
+                            <span class="text-white text-[10px] font-bold">F</span>
                         </div>
-                        <span class="font-light text-[10px]">Crafted by</span>
-                        <span class="font-medium text-[10px] tracking-wide">ForgeHeart</span>
+                        <span class="font-light">Crafted by</span>
+                        <span class="font-medium tracking-wide">ForgeHeart</span>
                     </div>
                 </div>
             </div>
@@ -417,79 +393,81 @@
     </footer>
 
     <!-- The Wild Yeast Kitchen Overlay -->
-    <div id="kitchenOverlay" class="kitchen-overlay fixed inset-0 z-[100] bg-gradient-to-br from-amber-50/95 to-amber-100/90">
+    <div id="kitchenOverlay" class="kitchen-overlay fixed inset-0 z-[100]">
         <div class="kitchen-overlay-content h-full overflow-y-auto">
-            <div class="container mx-auto px-4 py-12">
+            <div class="container mx-auto px-4 py-16">
                 <!-- Close Button -->
-                <button id="closeKitchen" class="close-btn absolute top-6 right-6 w-12 h-12 bg-white/80 backdrop-blur-sm rounded-full flex items-center justify-center text-amber-800 hover:bg-white/90 transition-colors">
+                <button id="closeKitchen" class="close-btn fixed top-6 right-6 z-10">
                     <span class="text-xl">×</span>
                 </button>
                 
                 <!-- Header -->
-                <div class="text-center mb-12">
-                    <h2 class="text-[clamp(2rem,5vw,3rem)] font-display tracking-wider uppercase italic text-[#3a2f28] mb-4">
+                <div class="text-center mb-16">
+                    <h2 class="section-heading mb-6">
                         The Wild Yeast Kitchen
                     </h2>
-                    <p class="text-xl text-secondary font-display italic">Where ancient tradition meets modern passion</p>
+                    <p class="text-xl text-warm-grey font-serif italic">Where ancient tradition meets island passion</p>
                 </div>
                 
                 <!-- Content Grid -->
-                <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
                     <!-- Wild Yeast Story -->
-                    <div class="paper-texture p-8 rounded-2xl artisan-shadow">
-                        <div class="w-full h-48 bg-amber-100 rounded-lg mb-6 flex items-center justify-center sketch-border">
+                    <div class="paper-card p-8 sm:p-10">
+                        <div class="w-full h-56 bg-gradient-to-br from-soft-blush to-golden-honey/20 rounded-2xl mb-8 flex items-center justify-center">
                             <div class="text-center">
-                                <div class="text-5xl mb-2">🧪</div>
-                                <span class="text-amber-700 font-semibold">Wild Yeast Culture</span>
+                                <div class="text-6xl mb-4">🧪</div>
+                                <span class="text-primary-rust font-display font-medium text-xl">Living Wild Yeast Culture</span>
                             </div>
                         </div>
-                        <h3 class="text-xl font-display font-bold text-amber-800 mb-4 section-subtitle uppercase tracking-wide">Growing Life from Flour & Water</h3>
-                        <p class="text-secondary leading-relaxed mb-4">
-                            Nadine's wild yeast starter has been lovingly maintained for over two years. This living culture captures the unique microflora of the Isle of Lewis, giving every loaf its distinctive flavor and character.
-                        </p>
-                        <p class="text-secondary leading-relaxed">
-                            Unlike commercial yeast, wild yeast creates complex flavors through slow fermentation, resulting in bread that's easier to digest and incredibly flavorful.
-                        </p>
+                        <h3 class="subsection-heading mb-6">Growing Life from Flour & Water</h3>
+                        <div class="space-y-4 text-warm-grey leading-relaxed">
+                            <p>
+                                Nadine's wild yeast starter has been lovingly maintained for over two years, capturing the unique microflora of the Isle of Lewis and giving every loaf its distinctive character.
+                            </p>
+                            <p>
+                                Unlike commercial yeast, this living culture creates complex flavors through slow fermentation, resulting in bread that's easier to digest and incredibly flavorful.
+                            </p>
+                        </div>
                     </div>
                     
                     <!-- The Process -->
-                    <div class="paper-texture p-8 rounded-2xl artisan-shadow">
-                        <div class="w-full h-48 bg-amber-100 rounded-lg mb-6 flex items-center justify-center sketch-border">
+                    <div class="paper-card p-8 sm:p-10">
+                        <div class="w-full h-56 bg-gradient-to-br from-sage-green/20 to-primary-coral/20 rounded-2xl mb-8 flex items-center justify-center">
                             <div class="text-center">
-                                <div class="text-5xl mb-2">⏰</div>
-                                <span class="text-amber-700 font-semibold">18-Hour Process</span>
+                                <div class="text-6xl mb-4">⏰</div>
+                                <span class="text-primary-rust font-display font-medium text-xl">18-Hour Artisan Process</span>
                             </div>
                         </div>
-                        <h3 class="text-xl font-display font-bold text-amber-800 mb-4 section-subtitle uppercase tracking-wide">Slow Fermentation Magic</h3>
-                        <div class="space-y-3 text-secondary">
-                            <div class="flex items-center gap-3">
-                                <span class="w-6 h-6 bg-amber-200 rounded-full flex items-center justify-center text-xs font-bold">1</span>
-                                <span>Feed the starter with local flour</span>
+                        <h3 class="subsection-heading mb-6">Slow Fermentation Magic</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 text-warm-grey">
+                                <span class="w-8 h-8 bg-gradient-to-br from-sage-green to-golden-honey rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0">1</span>
+                                <span>Feed the starter with local flour and spring water</span>
                             </div>
-                            <div class="flex items-center gap-3">
-                                <span class="w-6 h-6 bg-amber-200 rounded-full flex items-center justify-center text-xs font-bold">2</span>
-                                <span>Mix dough and begin bulk fermentation</span>
+                            <div class="flex items-center gap-4 text-warm-grey">
+                                <span class="w-8 h-8 bg-gradient-to-br from-golden-honey to-primary-coral rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0">2</span>
+                                <span>Mix dough and begin bulk fermentation process</span>
                             </div>
-                            <div class="flex items-center gap-3">
-                                <span class="w-6 h-6 bg-amber-200 rounded-full flex items-center justify-center text-xs font-bold">3</span>
-                                <span>Shape and cold-proof overnight</span>
+                            <div class="flex items-center gap-4 text-warm-grey">
+                                <span class="w-8 h-8 bg-gradient-to-br from-primary-coral to-primary-rust rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0">3</span>
+                                <span>Shape carefully and cold-proof overnight</span>
                             </div>
-                            <div class="flex items-center gap-3">
-                                <span class="w-6 h-6 bg-amber-200 rounded-full flex items-center justify-center text-xs font-bold">4</span>
-                                <span>Bake in pre-heated Dutch oven</span>
+                            <div class="flex items-center gap-4 text-warm-grey">
+                                <span class="w-8 h-8 bg-gradient-to-br from-primary-rust to-sage-green rounded-full flex items-center justify-center text-xs font-bold text-white flex-shrink-0">4</span>
+                                <span>Bake in pre-heated Dutch oven to perfection</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Philosophy -->
-                <div class="text-center max-w-4xl mx-auto">
-                    <div class="handwritten p-8 rounded-xl artisan-shadow inline-block">
-                        <p class="text-2xl font-display font-bold text-amber-800 leading-tight mb-4">
-                            "Every loaf tells the story of our island - the salt air, the clean water, the time we take to do things right."
-                        </p>
-                        <div class="text-right">
-                            <span class="signature font-semibold text-lg">— Nadine's Philosophy</span>
+                <div class="text-center max-w-5xl mx-auto">
+                    <div class="paper-card p-10 sm:p-16">
+                        <blockquote class="text-2xl sm:text-3xl font-display font-medium text-ink-navy leading-tight mb-8">
+                            "Every loaf tells the story of our island — the salt air, the clean water, the time we take to do things right."
+                        </blockquote>
+                        <div class="text-center">
+                            <span class="text-sage-green font-serif italic text-xl">— Nadine's Philosophy</span>
                         </div>
                     </div>
                 </div>
@@ -499,55 +477,53 @@
 
     <!-- Project Story Modal -->
     <div id="projectModal" class="modal-backdrop fixed inset-0 z-[90] hidden">
-        <div class="modal-content max-w-4xl mx-auto mt-12 mb-12 bg-white rounded-2xl artisan-shadow mx-4">
-            <div class="p-8">
-                <!-- Close Button -->
-                <button id="closeModal" class="close-btn absolute top-4 right-4 w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center text-amber-800 hover:bg-amber-200 transition-colors">
-                    <span class="text-lg">×</span>
-                </button>
-                
-                <!-- Header -->
-                <div class="text-center mb-8">
-                    <h3 class="text-2xl font-display font-bold text-amber-800 mb-2">Project Story</h3>
-                    <p class="text-secondary">Crafting a digital home for artisan bread</p>
+        <div class="modal-content max-w-5xl mx-auto mt-16 mb-16 mx-4 p-10">
+            <!-- Close Button -->
+            <button id="closeModal" class="close-btn absolute top-4 right-4">
+                <span class="text-lg">×</span>
+            </button>
+            
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-display font-medium text-ink-navy mb-4">Project Story</h3>
+                <p class="text-warm-grey text-lg">Crafting a digital home for artisan bread</p>
+            </div>
+            
+            <!-- Content -->
+            <div class="space-y-10">
+                <!-- Challenge -->
+                <div>
+                    <h4 class="subsection-heading mb-4">The Challenge</h4>
+                    <p class="text-warm-grey leading-relaxed text-lg">
+                        Create a website that captures the warmth, authenticity, and craftsmanship of Nadine's sourdough bakery while being accessible to customers across the Isle of Lewis.
+                    </p>
                 </div>
                 
-                <!-- Content -->
-                <div class="space-y-8">
-                    <!-- Challenge -->
-                    <div>
-                        <h4 class="text-lg font-display font-semibold text-amber-800 mb-3 section-subtitle uppercase tracking-wide">The Challenge</h4>
-                        <p class="text-secondary leading-relaxed">
-                            Create a website that captures the warmth, authenticity, and craftsmanship of Nadine's sourdough bakery while being accessible to customers across the Isle of Lewis.
-                        </p>
-                    </div>
-                    
-                    <!-- Solution -->
-                    <div>
-                        <h4 class="text-lg font-display font-semibold text-amber-800 mb-3 section-subtitle uppercase tracking-wide">Our Approach</h4>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
-                            <div class="bg-amber-50 p-4 rounded-lg">
-                                <strong class="block text-amber-800 mb-2">Organic Design</strong>
-                                Hand-drawn elements and warm textures that reflect the artisan process
-                            </div>
-                            <div class="bg-amber-50 p-4 rounded-lg">
-                                <strong class="block text-amber-800 mb-2">Local Focus</strong>
-                                Optimized for mobile ordering and local delivery within Stornoway
-                            </div>
-                            <div class="bg-amber-50 p-4 rounded-lg">
-                                <strong class="block text-amber-800 mb-2">Performance</strong>
-                                Lightning-fast loading with smooth animations and interactions
-                            </div>
+                <!-- Solution -->
+                <div>
+                    <h4 class="subsection-heading mb-6">Our Approach</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-soft-blush/30 p-6 rounded-2xl">
+                            <strong class="block text-primary-rust mb-3 font-display text-lg">Organic Design</strong>
+                            <p class="text-warm-grey">Hand-crafted elements and warm textures that reflect the artisan process</p>
+                        </div>
+                        <div class="bg-sage-green/10 p-6 rounded-2xl">
+                            <strong class="block text-primary-rust mb-3 font-display text-lg">Local Focus</strong>
+                            <p class="text-warm-grey">Optimized for mobile ordering and local delivery within Stornoway</p>
+                        </div>
+                        <div class="bg-golden-honey/20 p-6 rounded-2xl">
+                            <strong class="block text-primary-rust mb-3 font-display text-lg">Performance</strong>
+                            <p class="text-warm-grey">Lightning-fast loading with smooth animations and interactions</p>
                         </div>
                     </div>
-                    
-                    <!-- Results -->
-                    <div>
-                        <h4 class="text-lg font-display font-semibold text-amber-800 mb-3 section-subtitle uppercase tracking-wide">The Result</h4>
-                        <p class="text-secondary leading-relaxed">
-                            A unique digital experience that feels as warm and welcoming as Nadine's kitchen, helping customers connect with the story behind every loaf.
-                        </p>
-                    </div>
+                </div>
+                
+                <!-- Results -->
+                <div>
+                    <h4 class="subsection-heading mb-4">The Result</h4>
+                    <p class="text-warm-grey leading-relaxed text-lg">
+                        A unique digital experience that feels as warm and welcoming as Nadine's kitchen, helping customers connect with the story behind every loaf.
+                    </p>
                 </div>
             </div>
         </div>
